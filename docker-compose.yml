@@ -2,3 +2,8 @@ version: "3.9"
 services:
   app:
     build: .
+    devices:
+      - '/dev:/dev'
+    privileged: true
+    volumes:
+      - .:/code
