@@ -10,4 +10,4 @@ RUN apt-get update && apt-get install -y \
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 COPY rs_capture.py .
-CMD python3 rs_capture.py
+CMD ["python3", "-u", "rs_capture.py"]

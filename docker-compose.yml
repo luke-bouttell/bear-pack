@@ -7,3 +7,5 @@ services:
     privileged: true
     volumes:
       - .:/code
+    init: true
+    stop_grace_period: 30s
